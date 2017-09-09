@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Day04
 {
@@ -10,8 +6,77 @@ namespace Day04
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            Console.WriteLine("Day04");
         }
     }
+
+    class Car
+    {
+        Wheel[] wheel;
+        Engine[] engine;
+        Price price;
+        Color color;
+        Seat[] seats;
+        Pedal[] pedals;
+        Door[] doors;
+
+        void Drive()
+        {
+            doors = new Door[2];
+
+            doors[0].Lock();
+            doors[1].Lock();
+        }
+
+    }
+
+    class Door
+    {
+        int windowsCount;
+        void Open()
+        {
+        }
+
+        void Close()
+        {
+        }
+
+        public void Lock()
+        {
+
+        }
+
+        void UnLock()
+        {
+        }
+    }
+
+    class Wheel
+    {
+    }
+
+    class Engine
+    {
+    }
+
+    class Price
+    {
+    }
+
+    class Color
+    {
+    }
+
+    class Seat
+    {
+    }
+
+    class Handle
+    {
+    }
+
+    class Pedal
+    {
+    }
+
+
 }
