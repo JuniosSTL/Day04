@@ -6,77 +6,47 @@ namespace Day04
     {
         static void Main(string[] args)
         {
-        }
-    }
+            int a = new int(); // ==> int a; //legacy
+            float b = new float(); // == flat b;
 
-    class Car
-    {
-        Wheel[] wheel;
-        Engine[] engine;
-        Price price;
-        Color color;
-        Seat[] seats;
-        Pedal[] pedals;
-        Door[] doors;
+            Program p = new Program();
+            p.Add();
 
-        void Drive()
-        {
-            doors = new Door[2];
-
-            doors[0].Lock();
-            doors[1].Lock();
+            A.Display();
+            A.display = 100;
         }
 
-    }
-
-    class Door
-    {
-        int windowsCount;
-        void Open()
-        {
-        }
-
-        void Close()
-        {
-        }
-
-        public void Lock()
+        void Add()
         {
 
         }
+    }
 
-        void UnLock()
+    class A
+    {
+        public static void Display()
         {
+            Console.WriteLine("Class A");
+        }
+
+        public static int display;
+    }
+
+    class B
+    {
+        void Test()
+        {
+            A.display = 20;
+        }
+
+
+        public static void Display()
+        {
+            Console.WriteLine("Class B");
         }
     }
 
-    class Wheel
+    class C
     {
     }
-
-    class Engine
-    {
-    }
-
-    class Price
-    {
-    }
-
-    class Color
-    {
-    }
-
-    class Seat
-    {
-    }
-
-    class Handle
-    {
-    }
-
-    class Pedal
-    {
-    }
-
-
 }
