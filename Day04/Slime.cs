@@ -8,5 +8,9 @@ namespace Day04
 {
     class Slime : Monster
     {
+        public Slime()
+        {
+            name = "슬라임";
+        }
     }
 }

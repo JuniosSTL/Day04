@@ -13,6 +13,11 @@ namespace Day04
         public int attack;
         public float moveSpeed;
 
+        public Monster()
+        {
+            name = "이름없음";
+        }
+
         public void Move()
         {
             Console.WriteLine(name + " 이동");

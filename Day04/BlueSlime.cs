@@ -8,5 +8,9 @@ namespace Day04
 {
     class BlueSlime : Slime
     {
+        public BlueSlime()
+        {
+            name = "파란 슬라임";
+        }
     }
 }

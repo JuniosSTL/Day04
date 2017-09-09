@@ -8,5 +8,9 @@ namespace Day04
 {
     class Goblin : Monster
     {
+        public Goblin()
+        {
+            name = "고블린";
+        }
     }
 }

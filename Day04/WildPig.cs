@@ -8,5 +8,9 @@ namespace Day04
 {
     class WildPig : Monster
     {
+        public WildPig()
+        {
+            name = "멧돼지";
+        }
     }
 }
