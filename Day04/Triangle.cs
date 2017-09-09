@@ -10,6 +10,8 @@ namespace Day04
     {
         public override void Draw()
         {
+            base.Draw();
+
             Console.WriteLine("삼각형");
         }
     }

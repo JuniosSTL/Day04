@@ -10,7 +10,7 @@ namespace Day04
     {
         public virtual void Draw()
         {
-            Console.WriteLine("모양");
+            Console.Write("모양 : ");
         }
     }
 }

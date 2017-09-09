@@ -12,5 +12,11 @@ namespace Day04
         {
             name = "멧돼지";
         }
+
+        public override void Move()
+        {
+            base.Move();
+            Console.WriteLine("달려간다.");
+        }
     }
 }

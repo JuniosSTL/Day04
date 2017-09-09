@@ -12,5 +12,11 @@ namespace Day04
         {
             name = "파란 슬라임";
         }
+
+        public override void Move()
+        {
+            base.Move();
+            Console.WriteLine("파랗게 미끄러져 간다.");
+        }
     }
 }

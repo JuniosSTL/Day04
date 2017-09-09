@@ -12,5 +12,11 @@ namespace Day04
         {
             name = "고블린";
         }
+
+        public override void Move()
+        {
+            base.Move();
+            Console.WriteLine("뛰어간다");
+        }
     }
 }

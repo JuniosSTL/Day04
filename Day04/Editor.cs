@@ -8,37 +8,32 @@ namespace Day04
 {
     class Editor
     {
-        public Shape[] drawn; 
+        public List<Shape> drawn;
+        public Dictionary<string, int> a;
+
+
         public void Draw()
         {
+            drawn = new List<Shape>();
             Random r = new Random();
 
             int circleCount = r.Next(0, 10);
             int rectCount = r.Next(0, 10);
             int triCount = r.Next(0, 10);
 
-            drawn = new Shape[circleCount + rectCount + triCount];
-
-            int index = 0;
             for (int i = 0; i < circleCount; i++)
             {
-                drawn[index] = new Circle();
-                //drawn[index].Draw();
-                index++;
+                drawn.Add(new Circle());
             }
 
             for (int i = 0; i < rectCount; i++)
             {
-                drawn[index] = new Rectangle();
-                //drawn[index].Draw();
-                index++;
+                drawn.Add(new Rectangle());
             }
 
             for (int i = 0; i < triCount; i++)
             {
-                drawn[index] = new Triangle();
-                //drawn[index].Draw();
-                index++;
+                drawn.Add(new Triangle());
             }
         }
 
@@ -49,7 +44,7 @@ namespace Day04
 
         public void Load()
         {
-            for(int i =0; i < drawn.Length; ++i)
+            for(int i =0; i < drawn.Count; ++i)
             {
                 drawn[i].Draw();
             }

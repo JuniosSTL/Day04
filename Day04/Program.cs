@@ -6,9 +6,11 @@ namespace Day04
     {
         static void Main(string[] args)
         {
-            Editor e = new Editor();
-            e.Draw();
-            e.Load();
+            //Goblin g = new Goblin();
+            //g.Move();
+
+            BlueSlime b = new BlueSlime();
+            b.Move();
         }
     }
 }

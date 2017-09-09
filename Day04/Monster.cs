@@ -18,9 +18,9 @@ namespace Day04
             name = "이름없음";
         }
 
-        public void Move()
+        public virtual void Move()
         {
-            Console.WriteLine(name + " 이동");
+            Console.Write(name + " ");
         }
     }
 }
