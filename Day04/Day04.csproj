@@ -54,6 +54,7 @@
     <Compile Include="Shape.cs" />
     <Compile Include="Slime.cs" />
     <Compile Include="Triangle.cs" />
+    <Compile Include="TV.cs" />
     <Compile Include="WildPig.cs" />
   </ItemGroup>
   <ItemGroup>

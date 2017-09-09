@@ -8,7 +8,7 @@ namespace Day04
 {
     class Monster
     {
-        public string name;
+        protected string name;
         public int hp;
         public int attack;
         public float moveSpeed;
@@ -21,6 +21,32 @@ namespace Day04
         public virtual void Move()
         {
             Console.Write(name + " ");
+        }
+
+        public string GetName()
+        {
+            return name;
+        }
+
+        public void SetName(string newValue)
+        {
+            //newValue 욕인지 확인
+            name = newValue;
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            //set
+            //{
+            //    //필터 로직
+            //    //네트워크 
+            //    name = value;
+            //}
         }
     }
 }

@@ -6,11 +6,11 @@ namespace Day04
     {
         static void Main(string[] args)
         {
-            //Goblin g = new Goblin();
-            //g.Move();
+            Goblin g = new Goblin();
+            g.Name = "슬라임";
 
-            BlueSlime b = new BlueSlime();
-            b.Move();
+            Console.WriteLine(g.Name);
+            
         }
     }
 }
